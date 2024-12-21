@@ -2,7 +2,7 @@ import React from 'react'
 import { ingatlanContext } from '../context/IngatlanContext'
 
 const IngatlanTablazat = () => {
-    const {ingatlanList} = useContext(ingatlanContext)
+    const {ingatlanList} = useContext(ingatlanContext);
   return (
     <div>
         <table>

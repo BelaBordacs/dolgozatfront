@@ -6,6 +6,11 @@ function App() {
     <div className="App">
       <header className="App-header">
       </header>
+
+      <IngatlanProvider>
+        <h1>Ingatlanok Listája</h1>
+        <IngatlanTablazat />
+      </IngatlanProvider>
     </div>
   );
 }

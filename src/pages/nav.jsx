@@ -4,8 +4,10 @@ const nav = () => {
   return (
     <div>
         <nav>
-            <ul>Főoldal</ul>
-            <ul>Hirdetés feladás</ul>
+            <ul>
+            <li><a href="">Főoldal</a></li>
+            <li><a href="">Hirdetés feladás</a></li>
+            </ul>
         </nav>
     </div>
   )

@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
-export const ingatlanContext = createContext();
+export const IngatlanContext = createContext();
 
 export const IngatlanProvider = ({ children }) => {
   const [ingatlanList, setIngatlanList] = useState([]);
@@ -25,8 +25,8 @@ export const IngatlanProvider = ({ children }) => {
   }, []);
 
   return (
-    <DataContext.Provider value={{ ingatlanList, error,}}>
+    <IngatlanContext.Provider value={{ ingatlanList, error,}}>
       {children}
-    </DataContext.Provider>
+    </IngatlanContext.Provider>
   );
 };
